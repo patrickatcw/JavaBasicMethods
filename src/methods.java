@@ -2,14 +2,22 @@ public class methods {
 
     public static void main(String[] args) {        //main method
 
-        calculateScore(true, 800, 5, 100);
-                                //calling the method inside main method
-                                //as the code runs, this causes program to
-                                //jump to method below, run it, then continue on from there
-                                //argument values are within quotes
+        //hardcoding the values, maybe better fro visual and organizing
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
 
-        calculateScore(true, 1000, 8, 200);
-                                //calling method twice with different argument values
+        calculateScore (gameOver, score, levelCompleted, bonus);
+
+        gameOver = true;
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        calculateScore (gameOver, score, levelCompleted, bonus);
+
+
     }
 
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {       //new method
