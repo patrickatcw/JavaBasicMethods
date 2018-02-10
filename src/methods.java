@@ -8,17 +8,9 @@ public class methods {
         int levelCompleted = 5;
         int bonus = 100;
 
-        if (gameOver) {
-
-            int finalScore = score + (levelCompleted * bonus);
-            finalScore += 1000;
-            //addition to code block, not represented in duplicated code
-            //below, which is problem
-            //result change will not be added below
-            System.out.println("Your final score was " + finalScore);
-
-        }
-
+       calculateScore();        //calling the method inside main method
+                                //as the code runs, this causes program to
+                                //jump to method below, run it, then continue on from there
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
