@@ -8,9 +8,11 @@ public class methods {
         int levelCompleted = 5;
         int bonus = 100;
 
-       calculateScore();        //calling the method inside main method
+       calculateScore(true, 800, 5, 100);
+                                //calling the method inside main method
                                 //as the code runs, this causes program to
                                 //jump to method below, run it, then continue on from there
+                                //argument values are within quotes
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
@@ -23,12 +25,8 @@ public class methods {
         }
     }
 
-    public static void calculateScore() {           //new method
-
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {           //new method
+        //parameters are within quotes, but need actual values above in calculateScore
 
         if (gameOver) {
 
